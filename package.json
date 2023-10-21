@@ -1,0 +1,24 @@
+{
+  "name": "EssL-API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vasanth V V",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prestart": "yarn build",
+    "start": "node dist/index.js",
+    "predev": "yarn build",
+    "dev": "npx tsc -w & nodemon dist/index.js"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.20",
+    "@types/node": "^20.8.7",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2",
+    "zkh-lib": "^1.0.0"
+  },
+  "engines": {}
+}
